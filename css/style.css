@@ -1,0 +1,277 @@
+body {
+  background-color: #b4d4f2;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container p {
+  text-align: justify;
+  text-align-last: center; /* this centers the last line of each paragraph */
+}
+
+.parent-container {
+  position: relative;
+}
+
+.heading {
+  position: relative;
+  text-align: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icon-left {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px; /* adjust size as needed */
+  height: 30px; /* adjust size as needed */
+  margin-right: 10px; /* adjust spacing as needed */
+}
+
+.text {
+  z-index: 9999;
+}
+
+.icon-right {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px; /* adjust size as needed */
+  height: 30px; /* adjust size as needed */
+  margin-left: 10px; /* adjust spacing as needed */
+  transform: scaleX(-1);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+.logo {
+  display: block; /* This ensures that the image is centered horizontally */
+  margin: 0 auto; /* This centers the image horizontally */
+  max-width: 75px; /* This ensures that the image scales down proportionally if it's larger than the viewport */
+  height: auto; /* This also helps the image scale down proportionally */
+}
+
+/* Styling for toggle sections */
+.toggle-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toggle-section > button {
+  margin-right: 10px;
+}
+
+.collapsed {
+  width: 150px;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s ease-out;
+}
+
+.collapsed p {
+  margin: 0;
+}
+
+.expanded {
+  width: 150px;
+  overflow: hidden;
+  height: auto;
+  transition: height 0.5s ease-out;
+}
+
+.expanded.toggle-section p {
+  margin: 0;
+  text-align: left;
+}
+
+.expanded.toggle-section p:first-child {
+  flex: 1;
+  text-align: center;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #0077c0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for toggle-section paragraphs */
+.toggle-section-paragraph {
+  flex: 1;
+  text-align: justify;
+  word-break: break-word;
+  display: flex;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+button:focus {
+  outline: none;
+}
+
+button, a {
+  transition: background-color 0.3s ease;
+}
+
+button:hover, a:hover {
+  background-color: #c7c7c7;
+}
+
+.button1-icon {
+  background-image: url('../images/honesty.png');
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  background-size: 25px 25px;
+}
+
+.button2-icon {
+  background-image: url('../images/compassion-color.png');
+  background-repeat: no-repeat;
+  background-position: 2% center;
+  background-size: 25px 25px;
+}
+
+.button3-icon {
+  background-image: url('../images/growth.png');
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  background-size: 30px 30px;
+}
+
+.button4-icon {
+  background-image: url('../images/creativity-colored.png');
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  background-size: 30px 30px;
+}
+
+.button5-icon {
+  background-image: url('../images/excellence-colored.png');
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  background-size: 30px 30px;
+}
+
+.button6-icon {
+  background-image: url('../images/collaboration-colored2.png');
+  background-repeat: no-repeat;
+  background-position: 2% center;
+  background-size: 25px 25px;
+}
+
+.button7-icon {
+  background-image: url('../images/family-friends-colored2.png');
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  background-size: 25px 25px;
+}
+
+.button8-icon {
+  background-image: url('../images/employer-and-colleagues.png');
+  background-repeat: no-repeat;
+  background-position: 2% center;
+  background-size: 25px 25px;
+}
+
+.button9-icon {
+  background-image: url('../images/community-colored2.png');
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  background-size: 25px 25px;
+}
+
+.button10-icon {
+  background-image: url('../images/environment-colored4.png');
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  background-size: 20px 20px;
+}
+
+.button11-icon {
+  background-image: url('../images/conflict-colored3.png');
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  background-size: 30px 30px;
+}
+
+.button12-icon {
+  background-image: url('../images/years.png');
+  background-repeat: no-repeat;
+  background-position: 3% center;
+  background-size: 30px 30px;
+}
+
+.button13-icon {
+  background-image: url('../images/goal-colored.png');
+  background-repeat: no-repeat;
+  background-position: 3% center;
+  background-size: 20px 20px;
+}
+
+.button14-icon {
+  background-image: url('../images/improvement-colored.png');
+  background-repeat: no-repeat;
+  background-position: 2% center;
+  background-size: 35px 35px;
+}
+
+.preview-image {
+  max-width: 80%;
+  max-height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+}
